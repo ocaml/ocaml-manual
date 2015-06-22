@@ -11,6 +11,7 @@ all: $(FILES)
 clean:
 	rm -f $(FILES)
 	rm -f *~ #*#
+	rm -f warnings-help.etex
 
 .SUFFIXES:
 .SUFFIXES: .tex .etex
