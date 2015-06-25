@@ -8,10 +8,9 @@ FORMAT=../../tools/format-intf
 
 all: $(FILES)
 
-clean:
+clean::
 	rm -f $(FILES)
 	rm -f *~ #*#
-	rm -f warnings-help.etex
 
 .SUFFIXES:
 .SUFFIXES: .tex .etex
@@ -36,3 +35,6 @@ debugger.tex: debugger.etex $(TRANSF)
 
 warnings-help.etex: ../warnings-help.etex
 	cp ../warnings-help.etex .
+
+clean::
+	rm -f warnings-help.etex
